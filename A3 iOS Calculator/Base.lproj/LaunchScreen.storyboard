@@ -34,7 +34,7 @@
                                 <color key="textColor" red="0.80011230710000003" green="0.33363637330000001" blue="0.24168032410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2020-21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ux8-SA-SUj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ux8-SA-SUj">
                                 <rect key="frame" x="155" y="847" width="104" height="20"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="12"/>
                                 <color key="textColor" red="0.31348019840000002" green="0.76719933750000002" blue="0.62393397090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,6 +52,7 @@
                             <constraint firstItem="Ux8-SA-SUj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eoP-VT-4dc"/>
                             <constraint firstItem="FHp-Bc-bFp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mCM-CS-TA6"/>
                             <constraint firstItem="qkM-Us-vg8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oh4-W7-Skn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ux8-SA-SUj" secondAttribute="bottom" constant="-5" id="qb8-ph-Ta2"/>
                             <constraint firstItem="FHp-Bc-bFp" firstAttribute="top" secondItem="omX-9g-gCc" secondAttribute="bottom" constant="10" id="w33-V8-GcH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
