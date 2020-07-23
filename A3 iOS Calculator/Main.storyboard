@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ey4-0b-agg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ey4-0b-agg">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,23 +10,48 @@
         <!--View Controller-->
         <scene sceneID="yMB-Nt-Ipj">
             <objects>
-                <viewController id="ey4-0b-agg" customClass="ViewController" customModule="Calculator_Layout_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ey4-0b-agg" customClass="ViewController" customModule="A3_iOS_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vrm-yE-iQY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="28J-OZ-3aQ">
-                                <rect key="frame" x="5" y="350.66666666666674" width="404" height="506.33333333333326"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="28J-OZ-3aQ">
+                                <rect key="frame" x="5" y="49" width="404" height="813"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AhK-hc-W3R" userLabel="1st Row">
-                                        <rect key="frame" x="0.0" y="0.0" width="404" height="97.333333333333329"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2e-DL-Edp">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="249"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giC-dS-7zk" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="97.333333333333329"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="olJ-ow-cXp">
+                                                <rect key="frame" x="10" y="0.0" width="384" height="249"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdq-Yj-OHk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="56.333333333333336"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-OC-wA0">
+                                                        <rect key="frame" x="0.0" y="56.333333333333329" width="384" height="192.66666666666669"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="60"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="olJ-ow-cXp" firstAttribute="top" secondItem="i2e-DL-Edp" secondAttribute="top" id="6Cc-nh-E2P"/>
+                                            <constraint firstAttribute="bottom" secondItem="olJ-ow-cXp" secondAttribute="bottom" id="O9k-eu-dWS"/>
+                                            <constraint firstAttribute="trailing" secondItem="olJ-ow-cXp" secondAttribute="trailing" constant="10" id="fr8-vp-W79"/>
+                                            <constraint firstItem="olJ-ow-cXp" firstAttribute="leading" secondItem="i2e-DL-Edp" secondAttribute="leading" constant="10" id="iSw-Mm-SIX"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AhK-hc-W3R" userLabel="1st Row">
+                                        <rect key="frame" x="0.0" y="250" width="404" height="111"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giC-dS-7zk" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="111"/>
                                                 <color key="backgroundColor" red="0.64294850830000005" green="0.64704281090000004" blue="0.651107192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="giC-dS-7zk" secondAttribute="height" multiplier="1:1" id="L7J-cT-Gib"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="AC">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -38,12 +63,9 @@
                                                     <action selector="allClear:" destination="ey4-0b-agg" eventType="touchUpInside" id="fls-UR-2le"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1m7-Fu-jPO" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="97.333333333333329"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1m7-Fu-jPO" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="111"/>
                                                 <color key="backgroundColor" red="0.64294850830000005" green="0.64704281090000004" blue="0.651107192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="1m7-Fu-jPO" secondAttribute="height" multiplier="1:1" id="c7l-cg-AB7"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="+/-">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -55,12 +77,9 @@
                                                     <action selector="posOrNeg:" destination="ey4-0b-agg" eventType="touchUpInside" id="QAy-fg-8J9"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLl-yq-dwl" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="97.333333333333329"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLl-yq-dwl" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="111"/>
                                                 <color key="backgroundColor" red="0.64294850830000005" green="0.64704281090000004" blue="0.651107192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="FLl-yq-dwl" secondAttribute="height" multiplier="1:1" id="0i4-N7-aLy"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="%">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -72,12 +91,9 @@
                                                     <action selector="percent:" destination="ey4-0b-agg" eventType="touchUpInside" id="m7E-hV-O9s"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Say-qZ-Hhr" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="97.333333333333329"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Say-qZ-Hhr" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="111"/>
                                                 <color key="backgroundColor" red="0.98801761870000004" green="0.62645328040000003" blue="0.047235123810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Say-qZ-Hhr" secondAttribute="height" multiplier="1:1" id="V9L-Lr-zaH"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="÷">
                                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -90,24 +106,13 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="Say-qZ-Hhr" firstAttribute="width" secondItem="Say-qZ-Hhr" secondAttribute="height" multiplier="1:1" id="7rn-wr-IdF"/>
-                                            <constraint firstItem="Say-qZ-Hhr" firstAttribute="width" secondItem="Say-qZ-Hhr" secondAttribute="height" multiplier="1:1" id="Dx3-fv-cH5"/>
-                                            <constraint firstItem="FLl-yq-dwl" firstAttribute="width" secondItem="FLl-yq-dwl" secondAttribute="height" multiplier="1:1" id="adF-hR-tpV"/>
-                                            <constraint firstItem="1m7-Fu-jPO" firstAttribute="width" secondItem="1m7-Fu-jPO" secondAttribute="height" multiplier="1:1" id="bfT-Kr-FHa"/>
-                                            <constraint firstItem="FLl-yq-dwl" firstAttribute="width" secondItem="FLl-yq-dwl" secondAttribute="height" multiplier="1:1" id="g0e-rq-nA9"/>
-                                            <constraint firstItem="Say-qZ-Hhr" firstAttribute="width" secondItem="Say-qZ-Hhr" secondAttribute="height" multiplier="1:1" id="r7D-Lq-ZIx"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7Ho-bh-NkT" userLabel="2nd Row">
-                                        <rect key="frame" x="0.0" y="102.33333333333331" width="404" height="97.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="362" width="404" height="111"/>
                                         <subviews>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcN-wI-phm" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="97.333333333333329"/>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcN-wI-phm" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="111"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="vcN-wI-phm" secondAttribute="height" multiplier="1:1" id="qqM-4y-xNq"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="7">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -119,12 +124,9 @@
                                                     <action selector="numberPad:" destination="ey4-0b-agg" eventType="touchUpInside" id="5HD-l4-rUF"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxK-lx-ouc" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="97.333333333333329"/>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxK-lx-ouc" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="111"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="mxK-lx-ouc" secondAttribute="height" multiplier="1:1" id="Uxy-nc-efQ"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,12 +138,9 @@
                                                     <action selector="numberPad:" destination="ey4-0b-agg" eventType="touchUpInside" id="kWT-R3-H0c"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a0-cj-40R" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="97.333333333333329"/>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a0-cj-40R" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="111"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="6a0-cj-40R" secondAttribute="height" multiplier="1:1" id="Cfi-dH-m5l"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -153,12 +152,9 @@
                                                     <action selector="numberPad:" destination="ey4-0b-agg" eventType="touchUpInside" id="J4M-96-1wu"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ez-1z-0cI" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="97.333333333333329"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ez-1z-0cI" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="111"/>
                                                 <color key="backgroundColor" red="0.98801761870000004" green="0.62645328040000003" blue="0.047235123810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="9ez-1z-0cI" secondAttribute="height" multiplier="1:1" id="1PG-BX-fD7"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="x">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -171,24 +167,13 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="6a0-cj-40R" firstAttribute="width" secondItem="6a0-cj-40R" secondAttribute="height" multiplier="1:1" id="57j-JZ-oW5"/>
-                                            <constraint firstItem="mxK-lx-ouc" firstAttribute="width" secondItem="mxK-lx-ouc" secondAttribute="height" multiplier="1:1" id="CwL-1Y-w4f"/>
-                                            <constraint firstItem="9ez-1z-0cI" firstAttribute="width" secondItem="9ez-1z-0cI" secondAttribute="height" multiplier="1:1" id="EWd-OF-hFP"/>
-                                            <constraint firstItem="9ez-1z-0cI" firstAttribute="width" secondItem="9ez-1z-0cI" secondAttribute="height" multiplier="1:1" id="SAW-wt-Awe"/>
-                                            <constraint firstItem="9ez-1z-0cI" firstAttribute="width" secondItem="9ez-1z-0cI" secondAttribute="height" multiplier="1:1" id="YM9-eY-ba7"/>
-                                            <constraint firstItem="6a0-cj-40R" firstAttribute="width" secondItem="6a0-cj-40R" secondAttribute="height" multiplier="1:1" id="zY9-9d-5Dp"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8IW-6w-7Fr" userLabel="3rd Row">
-                                        <rect key="frame" x="0.0" y="204.66666666666669" width="404" height="97.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="474" width="404" height="111"/>
                                         <subviews>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSm-vO-jo3" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="97.333333333333329"/>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSm-vO-jo3" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="111"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="XSm-vO-jo3" secondAttribute="height" multiplier="1:1" id="bUN-Zh-T8e"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -200,12 +185,9 @@
                                                     <action selector="numberPad:" destination="ey4-0b-agg" eventType="touchUpInside" id="HAe-aj-CGG"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U7-jI-Z1E" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="97.333333333333329"/>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U7-jI-Z1E" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="111"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="9U7-jI-Z1E" secondAttribute="height" multiplier="1:1" id="FVv-cR-hUx"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -217,12 +199,9 @@
                                                     <action selector="numberPad:" destination="ey4-0b-agg" eventType="touchUpInside" id="JMM-k2-QNs"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQE-gy-gEC" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="97.333333333333329"/>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQE-gy-gEC" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="111"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="zQE-gy-gEC" secondAttribute="height" multiplier="1:1" id="aM5-cx-BHo"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -234,12 +213,9 @@
                                                     <action selector="numberPad:" destination="ey4-0b-agg" eventType="touchUpInside" id="UPQ-ph-CfE"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2r-fr-dEi" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="97.333333333333329"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2r-fr-dEi" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="111"/>
                                                 <color key="backgroundColor" red="0.98801761870000004" green="0.62645328040000003" blue="0.047235123810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="E2r-fr-dEi" secondAttribute="height" multiplier="1:1" id="vY9-qn-l2G"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="-">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -252,24 +228,13 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="zQE-gy-gEC" firstAttribute="width" secondItem="zQE-gy-gEC" secondAttribute="height" multiplier="1:1" id="68J-WC-31y"/>
-                                            <constraint firstItem="E2r-fr-dEi" firstAttribute="width" secondItem="E2r-fr-dEi" secondAttribute="height" multiplier="1:1" id="6eH-Uc-aJs"/>
-                                            <constraint firstItem="zQE-gy-gEC" firstAttribute="width" secondItem="zQE-gy-gEC" secondAttribute="height" multiplier="1:1" id="CmC-R8-3Of"/>
-                                            <constraint firstItem="9U7-jI-Z1E" firstAttribute="width" secondItem="9U7-jI-Z1E" secondAttribute="height" multiplier="1:1" id="bMx-50-3ua"/>
-                                            <constraint firstItem="E2r-fr-dEi" firstAttribute="width" secondItem="E2r-fr-dEi" secondAttribute="height" multiplier="1:1" id="mfZ-nF-Gf9"/>
-                                            <constraint firstItem="E2r-fr-dEi" firstAttribute="width" secondItem="E2r-fr-dEi" secondAttribute="height" multiplier="1:1" id="sN1-ox-OoK"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t1q-HB-75x" userLabel="4th Row">
-                                        <rect key="frame" x="0.0" y="306.99999999999994" width="404" height="97"/>
+                                        <rect key="frame" x="0.0" y="586" width="404" height="110.66666666666663"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWx-5w-XXx" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="97"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWx-5w-XXx" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="110.66666666666667"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="sWx-5w-XXx" secondAttribute="height" multiplier="1:1" id="aUR-XL-dzj"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -281,12 +246,9 @@
                                                     <action selector="numberPad:" destination="ey4-0b-agg" eventType="touchUpInside" id="52l-xd-5CO"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkv-47-4od" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="97"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkv-47-4od" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="110.66666666666667"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="vkv-47-4od" secondAttribute="height" multiplier="1:1" id="OxF-GX-0kI"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -298,12 +260,9 @@
                                                     <action selector="numberPad:" destination="ey4-0b-agg" eventType="touchUpInside" id="T3t-ve-zYk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPT-SC-c0h" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="97"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPT-SC-c0h" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="110.66666666666667"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="zPT-SC-c0h" secondAttribute="height" multiplier="1:1" id="xXe-1j-ad9"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -315,12 +274,9 @@
                                                     <action selector="numberPad:" destination="ey4-0b-agg" eventType="touchUpInside" id="vzH-Oc-TV5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMM-aT-1hh" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="97"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMM-aT-1hh" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="110.66666666666667"/>
                                                 <color key="backgroundColor" red="0.98801761870000004" green="0.62645328040000003" blue="0.047235123810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="pMM-aT-1hh" secondAttribute="height" multiplier="1:1" id="3RN-1D-anz"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -333,20 +289,12 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="zPT-SC-c0h" firstAttribute="width" secondItem="zPT-SC-c0h" secondAttribute="height" multiplier="1:1" id="9TR-pe-WRe"/>
-                                            <constraint firstItem="pMM-aT-1hh" firstAttribute="width" secondItem="pMM-aT-1hh" secondAttribute="height" multiplier="1:1" id="Fa9-CO-oou"/>
-                                            <constraint firstItem="vkv-47-4od" firstAttribute="width" secondItem="vkv-47-4od" secondAttribute="height" multiplier="1:1" id="ZKs-Xo-QCK"/>
-                                            <constraint firstItem="pMM-aT-1hh" firstAttribute="width" secondItem="pMM-aT-1hh" secondAttribute="height" multiplier="1:1" id="hi0-jm-USz"/>
-                                            <constraint firstItem="pMM-aT-1hh" firstAttribute="width" secondItem="pMM-aT-1hh" secondAttribute="height" multiplier="1:1" id="oO7-n8-FHe"/>
-                                            <constraint firstItem="zPT-SC-c0h" firstAttribute="width" secondItem="zPT-SC-c0h" secondAttribute="height" multiplier="1:1" id="tsJ-Fv-BcN"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DlM-yR-2lP" userLabel="4th Row">
-                                        <rect key="frame" x="0.0" y="408.99999999999994" width="404" height="97.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="697.66666666666663" width="404" height="115.33333333333337"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHW-XN-oSg" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="199.66666666666666" height="97.333333333333329"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHW-XN-oSg" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="199.66666666666666" height="115.33333333333333"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <inset key="contentEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -362,14 +310,11 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2ri-Hj-WhM">
-                                                <rect key="frame" x="204.66666666666663" y="0.0" width="199.33333333333337" height="97.333333333333329"/>
+                                                <rect key="frame" x="204.66666666666663" y="0.0" width="199.33333333333337" height="115.33333333333333"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pp-AY-KDK" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="97.333333333333329"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pp-AY-KDK" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="115.33333333333333"/>
                                                         <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="7Pp-AY-KDK" secondAttribute="height" multiplier="1:1" id="ClF-Kz-1bg"/>
-                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -381,12 +326,9 @@
                                                             <action selector="decimal:" destination="ey4-0b-agg" eventType="touchUpInside" id="bUB-ZG-VTb"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aq2-T5-FNd" customClass="RoundButton" customModule="Calculator_Layout_iOS13" customModuleProvider="target">
-                                                        <rect key="frame" x="102.00000000000003" y="0.0" width="97.333333333333343" height="97.333333333333329"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aq2-T5-FNd" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="102.00000000000003" y="0.0" width="97.333333333333343" height="115.33333333333333"/>
                                                         <color key="backgroundColor" red="0.98801761870000004" green="0.62645328040000003" blue="0.047235123810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="aq2-T5-FNd" secondAttribute="height" multiplier="1:1" id="lLk-hx-7lJ"/>
-                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                         <state key="normal" title="=">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -399,37 +341,23 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="7Pp-AY-KDK" firstAttribute="width" secondItem="7Pp-AY-KDK" secondAttribute="height" multiplier="1:1" id="3zh-Vz-ZIc"/>
-                                                    <constraint firstItem="aq2-T5-FNd" firstAttribute="width" secondItem="aq2-T5-FNd" secondAttribute="height" multiplier="1:1" id="7o8-br-ukc"/>
-                                                    <constraint firstItem="aq2-T5-FNd" firstAttribute="width" secondItem="aq2-T5-FNd" secondAttribute="height" multiplier="1:1" id="8zg-5k-zS1"/>
-                                                    <constraint firstItem="7Pp-AY-KDK" firstAttribute="width" secondItem="7Pp-AY-KDK" secondAttribute="height" multiplier="1:1" id="PZO-ch-Xlq"/>
-                                                    <constraint firstItem="aq2-T5-FNd" firstAttribute="width" secondItem="aq2-T5-FNd" secondAttribute="height" multiplier="1:1" id="w5e-Ms-G5L"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-OC-wA0">
-                                <rect key="frame" x="5" y="345.66666666666669" width="404" height="0.0"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="80"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="28J-OZ-3aQ" firstAttribute="top" secondItem="bcK-OC-wA0" secondAttribute="bottom" constant="5" id="17o-Rf-dQ1"/>
-                            <constraint firstItem="VnR-Yo-BMW" firstAttribute="trailing" secondItem="28J-OZ-3aQ" secondAttribute="trailing" constant="5" id="Qph-Rc-LaH"/>
-                            <constraint firstItem="28J-OZ-3aQ" firstAttribute="leading" secondItem="VnR-Yo-BMW" secondAttribute="leading" constant="5" id="V4P-wC-fes"/>
-                            <constraint firstItem="bcK-OC-wA0" firstAttribute="leading" secondItem="VnR-Yo-BMW" secondAttribute="leading" constant="5" id="YP7-by-bso"/>
-                            <constraint firstItem="VnR-Yo-BMW" firstAttribute="bottom" secondItem="28J-OZ-3aQ" secondAttribute="bottom" constant="5" id="boS-gG-BNc"/>
-                            <constraint firstItem="VnR-Yo-BMW" firstAttribute="trailing" secondItem="bcK-OC-wA0" secondAttribute="trailing" constant="5" id="jfB-qB-rgy"/>
+                            <constraint firstItem="VnR-Yo-BMW" firstAttribute="bottom" secondItem="28J-OZ-3aQ" secondAttribute="bottom" id="2vO-da-934"/>
+                            <constraint firstItem="28J-OZ-3aQ" firstAttribute="leading" secondItem="VnR-Yo-BMW" secondAttribute="leading" constant="5" id="bDU-LU-mD1"/>
+                            <constraint firstItem="28J-OZ-3aQ" firstAttribute="top" secondItem="VnR-Yo-BMW" secondAttribute="top" constant="5" id="fZp-as-aZT"/>
+                            <constraint firstItem="VnR-Yo-BMW" firstAttribute="trailing" secondItem="28J-OZ-3aQ" secondAttribute="trailing" constant="5" id="hKP-RK-TRd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VnR-Yo-BMW"/>
                     </view>
                     <connections>
+                        <outlet property="calculationPreview" destination="wdq-Yj-OHk" id="l3y-Z7-ULj"/>
                         <outlet property="display" destination="bcK-OC-wA0" id="wab-Ad-RV0"/>
                     </connections>
                 </viewController>

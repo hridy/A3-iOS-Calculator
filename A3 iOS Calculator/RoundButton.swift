@@ -8,28 +8,29 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class RoundButton: UIButton {
-    @IBInspectable var roundButton:Bool = false {
-        didSet{
-            if roundButton{
-                layer.cornerRadius = frame.height / 2
-            }
-        }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUpButton()
     }
     
-    override func prepareForInterfaceBuilder() {
-        if roundButton{
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setUpButton()
+    }
+    
+    func setUpButton(){
+        //        layer.cornerRadius = 25
+        if frame.height < frame.width {
+            print("Height: \(frame.height)")
             layer.cornerRadius = frame.height / 2
         }
+        else {
+            print("Width: \(frame.width)")
+            layer.cornerRadius = frame.width / 2
+        }
+        
     }
-    
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
 }

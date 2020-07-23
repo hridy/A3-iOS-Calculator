@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,57 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculator" translatesAutoresizingMaskIntoConstraints="NO" id="omX-9g-gCc">
+                                <rect key="frame" x="107" y="385.5" width="200" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="f3w-tq-5og"/>
+                                    <constraint firstAttribute="width" constant="200" id="uVC-FM-e3S"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHp-Bc-bFp">
+                                <rect key="frame" x="142" y="520.5" width="130" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.31348019840000002" green="0.76719933750000002" blue="0.62393397090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hridyansh Sharma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkM-Us-vg8">
+                                <rect key="frame" x="143" y="547.5" width="128" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.80011230710000003" green="0.33363637330000001" blue="0.24168032410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2020-21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ux8-SA-SUj">
+                                <rect key="frame" x="155" y="847" width="104" height="20"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="12"/>
+                                <color key="textColor" red="0.31348019840000002" green="0.76719933750000002" blue="0.62393397090000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qkM-Us-vg8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2DH-jh-6Bg"/>
+                            <constraint firstItem="omX-9g-gCc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2hh-Xm-1Rr"/>
+                            <constraint firstItem="omX-9g-gCc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3gT-Yh-phZ"/>
+                            <constraint firstItem="qkM-Us-vg8" firstAttribute="top" secondItem="FHp-Bc-bFp" secondAttribute="bottom" constant="3" id="A8m-vS-enI"/>
+                            <constraint firstItem="omX-9g-gCc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Bab-TI-DXc"/>
+                            <constraint firstItem="omX-9g-gCc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eQG-YD-g2C"/>
+                            <constraint firstItem="Ux8-SA-SUj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eoP-VT-4dc"/>
+                            <constraint firstItem="FHp-Bc-bFp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mCM-CS-TA6"/>
+                            <constraint firstItem="qkM-Us-vg8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oh4-W7-Skn"/>
+                            <constraint firstItem="FHp-Bc-bFp" firstAttribute="top" secondItem="omX-9g-gCc" secondAttribute="bottom" constant="10" id="w33-V8-GcH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calculator" width="512" height="512"/>
+    </resources>
 </document>
