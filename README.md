@@ -33,5 +33,11 @@ The calculator is able to perform simple math operations. This includes being ab
 <p align="center">
   <img src="https://github.com/hridy/A3-iOS-Calculator/blob/master/img/landscape%20mode.gif" align="center" alt="landscape mode" title="gif"/>
 </p>
-The calculator automatically scales its buttons and both views for lanscape mode on any device. This is done using the constraint settings built into xCode and make the app device agnostic.
+The calculator automatically scales its buttons and both views for lanscape mode on any device. This is done using the constraint settings built into Xcode and make the app device agnostic.
 
+| iPad Pro Landscape Mode (Slide Over)  | iPad Pro Portrait (Full Screen) |
+| ------------- | ------------- |
+| ![ipad pro landscape](https://github.com/hridy/A3-iOS-Calculator/blob/master/img/ipad%20Pro.png)  | ![ipad pro portrait](https://github.com/hridy/A3-iOS-Calculator/blob/master/img/ipad%20pro%20portrait.png)  |
+
+### Input detection
+The calculator is able to detect when multiple operation (ie. +, -, x) are being pressed and will only display and calculate using the latest input. Furthermore, the calculation preview will automatically update to display the previous calculation so that the user is able to keep track of their ongoing arithmetic.
