@@ -22,5 +22,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Test Cases
 ### Simple Arithmetic
+![screenshot_1](https://github.com/hridy/A3-iOS-Calculator/blob/master/img/screenshot_1.png)
 ![simple calculations](https://github.com/hridy/A3-iOS-Calculator/blob/master/img/Screen%20Recording%202020-07-24%20at%2012.02.33%20AM.mov)
 The calculator is able to perform simple math operations. This includes being able to perform functions of previous calculations as well as new ones every time the user presses *=*
