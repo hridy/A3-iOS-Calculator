@@ -21,5 +21,6 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Test Cases
-
-
+### Simple Arithmetic
+![simple calculations](https://github.com/hridy/A3-iOS-Calculator/blob/master/img/Screen%20Recording%202020-07-24%20at%2012.02.33%20AM.mov)
+The calculator is able to perform simple math operations. This includes being able to perform functions of previous calculations as well as new ones every time the user presses *=*
