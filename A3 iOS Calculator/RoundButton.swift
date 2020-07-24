@@ -21,6 +21,10 @@ class RoundButton: UIButton {
         setUpButton()
     }
     
+    /**
+     Function rounds to the button corner radius based on its frame's available width and height.
+     The purpose is for a more aesthetic appeal.
+     */
     func setUpButton(){
         //        layer.cornerRadius = 25
         if frame.height < frame.width {

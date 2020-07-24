@@ -15,23 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="28J-OZ-3aQ">
-                                <rect key="frame" x="5" y="49" width="404" height="813"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="28J-OZ-3aQ">
+                                <rect key="frame" x="10" y="49" width="394" height="813"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2e-DL-Edp">
-                                        <rect key="frame" x="0.0" y="0.0" width="404" height="249"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="486"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="olJ-ow-cXp">
-                                                <rect key="frame" x="10" y="0.0" width="384" height="249"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="olJ-ow-cXp">
+                                                <rect key="frame" x="10" y="0.0" width="374" height="486"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdq-Yj-OHk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="56.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="243"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-OC-wA0">
-                                                        <rect key="frame" x="0.0" y="56.333333333333329" width="384" height="192.66666666666669"/>
+                                                        <rect key="frame" x="0.0" y="243" width="374" height="243"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="60"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -47,10 +47,10 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AhK-hc-W3R" userLabel="1st Row">
-                                        <rect key="frame" x="0.0" y="250" width="404" height="111"/>
+                                        <rect key="frame" x="0.0" y="490.99999999999994" width="394" height="60.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giC-dS-7zk" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="111"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.64294850830000005" green="0.64704281090000004" blue="0.651107192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="AC">
@@ -64,7 +64,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1m7-Fu-jPO" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="111"/>
+                                                <rect key="frame" x="99.666666666666686" y="0.0" width="95" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.64294850830000005" green="0.64704281090000004" blue="0.651107192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="+/-">
@@ -78,10 +78,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLl-yq-dwl" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="111"/>
+                                                <rect key="frame" x="199.66666666666666" y="0.0" width="94.666666666666657" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.64294850830000005" green="0.64704281090000004" blue="0.651107192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
-                                                <state key="normal" title="%">
+                                                <state key="normal" title="⁒">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -92,7 +92,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Say-qZ-Hhr" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="111"/>
+                                                <rect key="frame" x="299.33333333333331" y="0.0" width="94.666666666666686" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.98801761870000004" green="0.62645328040000003" blue="0.047235123810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="÷">
@@ -108,10 +108,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7Ho-bh-NkT" userLabel="2nd Row">
-                                        <rect key="frame" x="0.0" y="362" width="404" height="111"/>
+                                        <rect key="frame" x="0.0" y="556.33333333333337" width="394" height="60.333333333333371"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcN-wI-phm" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="111"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="7">
@@ -125,7 +125,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxK-lx-ouc" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="111"/>
+                                                <rect key="frame" x="99.666666666666686" y="0.0" width="95" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="8">
@@ -139,7 +139,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a0-cj-40R" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="111"/>
+                                                <rect key="frame" x="199.66666666666666" y="0.0" width="94.666666666666657" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="9">
@@ -153,7 +153,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ez-1z-0cI" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="111"/>
+                                                <rect key="frame" x="299.33333333333331" y="0.0" width="94.666666666666686" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.98801761870000004" green="0.62645328040000003" blue="0.047235123810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="x">
@@ -169,10 +169,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8IW-6w-7Fr" userLabel="3rd Row">
-                                        <rect key="frame" x="0.0" y="474" width="404" height="111"/>
+                                        <rect key="frame" x="0.0" y="621.66666666666663" width="394" height="60.333333333333371"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSm-vO-jo3" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="111"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="4">
@@ -186,7 +186,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U7-jI-Z1E" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="111"/>
+                                                <rect key="frame" x="99.666666666666686" y="0.0" width="95" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="5">
@@ -200,7 +200,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQE-gy-gEC" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="111"/>
+                                                <rect key="frame" x="199.66666666666666" y="0.0" width="94.666666666666657" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="6">
@@ -214,7 +214,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2r-fr-dEi" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="111"/>
+                                                <rect key="frame" x="299.33333333333331" y="0.0" width="94.666666666666686" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.98801761870000004" green="0.62645328040000003" blue="0.047235123810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="-">
@@ -230,10 +230,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t1q-HB-75x" userLabel="4th Row">
-                                        <rect key="frame" x="0.0" y="586" width="404" height="110.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="687" width="394" height="60.333333333333371"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWx-5w-XXx" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="110.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="1">
@@ -247,7 +247,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkv-47-4od" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="102.33333333333334" y="0.0" width="97.333333333333343" height="110.66666666666667"/>
+                                                <rect key="frame" x="99.666666666666686" y="0.0" width="95" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="2">
@@ -261,7 +261,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPT-SC-c0h" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="204.66666666666666" y="0.0" width="96.999999999999972" height="110.66666666666667"/>
+                                                <rect key="frame" x="199.66666666666666" y="0.0" width="94.666666666666657" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="3">
@@ -275,7 +275,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMM-aT-1hh" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="306.66666666666669" y="0.0" width="97.333333333333314" height="110.66666666666667"/>
+                                                <rect key="frame" x="299.33333333333331" y="0.0" width="94.666666666666686" height="60.333333333333336"/>
                                                 <color key="backgroundColor" red="0.98801761870000004" green="0.62645328040000003" blue="0.047235123810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <state key="normal" title="+">
@@ -291,10 +291,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DlM-yR-2lP" userLabel="4th Row">
-                                        <rect key="frame" x="0.0" y="697.66666666666663" width="404" height="115.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="752.33333333333337" width="394" height="60.666666666666629"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHW-XN-oSg" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="199.66666666666666" height="115.33333333333333"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="194.66666666666666" height="60.666666666666664"/>
                                                 <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                 <inset key="contentEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -310,10 +310,10 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2ri-Hj-WhM">
-                                                <rect key="frame" x="204.66666666666663" y="0.0" width="199.33333333333337" height="115.33333333333333"/>
+                                                <rect key="frame" x="199.66666666666663" y="0.0" width="194.33333333333337" height="60.666666666666664"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pp-AY-KDK" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="115.33333333333333"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="60.666666666666664"/>
                                                         <color key="backgroundColor" red="0.1959345341" green="0.19995692370000001" blue="0.20409676430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                         <state key="normal" title=".">
@@ -327,7 +327,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aq2-T5-FNd" customClass="RoundButton" customModule="A3_iOS_Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="102.00000000000003" y="0.0" width="97.333333333333343" height="115.33333333333333"/>
+                                                        <rect key="frame" x="99.666666666666657" y="0.0" width="94.666666666666657" height="60.666666666666664"/>
                                                         <color key="backgroundColor" red="0.98801761870000004" green="0.62645328040000003" blue="0.047235123810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                                         <state key="normal" title="=">
@@ -350,9 +350,10 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VnR-Yo-BMW" firstAttribute="bottom" secondItem="28J-OZ-3aQ" secondAttribute="bottom" id="2vO-da-934"/>
-                            <constraint firstItem="28J-OZ-3aQ" firstAttribute="leading" secondItem="VnR-Yo-BMW" secondAttribute="leading" constant="5" id="bDU-LU-mD1"/>
+                            <constraint firstItem="VnR-Yo-BMW" firstAttribute="trailing" secondItem="28J-OZ-3aQ" secondAttribute="trailing" constant="10" id="At1-Sm-Qaa"/>
+                            <constraint firstItem="28J-OZ-3aQ" firstAttribute="centerX" secondItem="vrm-yE-iQY" secondAttribute="centerX" id="K9A-p2-hmq"/>
                             <constraint firstItem="28J-OZ-3aQ" firstAttribute="top" secondItem="VnR-Yo-BMW" secondAttribute="top" constant="5" id="fZp-as-aZT"/>
-                            <constraint firstItem="VnR-Yo-BMW" firstAttribute="trailing" secondItem="28J-OZ-3aQ" secondAttribute="trailing" constant="5" id="hKP-RK-TRd"/>
+                            <constraint firstItem="28J-OZ-3aQ" firstAttribute="leading" secondItem="VnR-Yo-BMW" secondAttribute="leading" constant="10" id="rFc-Ix-6ah"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VnR-Yo-BMW"/>
                     </view>
