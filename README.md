@@ -1,4 +1,5 @@
-# A5-iOS-Calculator
+
+# ![app logo](https://github.com/hridy/A3-iOS-Calculator/blob/master/A3%20iOS%20Calculator/Assets.xcassets/AppIcon.appiconset/40.png)iOS Calculator 
 ### README Created for Assignment 5
 
 SEG2105 - Assignment 5 - iOS Calculator App
