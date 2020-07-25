@@ -2,6 +2,7 @@
 # iOS Calculator 
 
 ### README Created for Assignment 5
+
 <img src="https://github.com/hridy/A3-iOS-Calculator/blob/master/A3%20iOS%20Calculator/Assets.xcassets/calculator.imageset/calculator%403x.png" align="right"
      alt="iOS Calculator logo" width="120" height="178">
 SEG2105 - Assignment 5 - iOS Calculator App
@@ -14,10 +15,14 @@ This project is a continuation of my Assignment 3 submission. Some of the new fe
 
 ## Test Cases
 1. User wants to use the app while taking notes on his/her iPad Pro so he brings in the calculator using 'Slide Over'
-2. The user has trouble seeing so they place the iPad
+2. The user has an ongoing calculation they're performing and want to keep track of the previous numbers. The user can accomplish this via the calculation preview.
+3. The user has trouble seeing, so to see the calculator they can use the app on an iPad and use the large icons. The icons are set to scale automatically to any sized iPad and iPhone.
+4. The user comes across a great sale and is curious to know how much 25% off of $10 is. To get the answer, the user can use the the percentage function to easily calculate the end amount.
+5. The user has a hand tremor and often presses the decimal or any math operation button multiple times, ruining their calculation. The application has been developed to only allow a single decimal per running number and only one math operation per calculation.
+
 ## License
 
-Copyright <2020> <Hridyansh Sharma>
+Copyright < 2020 > < Hridyansh Sharma >
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
